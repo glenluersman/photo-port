@@ -8,6 +8,8 @@ const categories = [
 ]
 const mockCurrentCategory = jest.fn();
 const mockSetCurrentCategory = jest.fn();
+const mockSetContactSelected = jest.fn();
+const mockContactSelected = jest.fn();
 
 afterEach(cleanup);
 
@@ -18,6 +20,8 @@ describe('Nav component', () => {
       categories={categories}
       setCurrentCategory={mockSetCurrentCategory}
       currentCategory={mockCurrentCategory} 
+      setContactSelected={mockSetContactSelected}
+      contactSelected={mockContactSelected}
     />);
   });
 
@@ -27,6 +31,8 @@ describe('Nav component', () => {
       categories={categories}
       setCurrentCategory={mockSetCurrentCategory}
       currentCategory={mockCurrentCategory} 
+      setContactSelected={mockSetContactSelected}
+      contactSelected={mockContactSelected}
     />);
     // assert value comparison
     expect(asFragment()).toMatchSnapshot();
@@ -39,7 +45,9 @@ describe('emoji is visible', () => {
     const { getByLabelText } = render(<Nav
       categories={categories}
       setCurrentCategory={mockSetCurrentCategory}
-      currentCategory={mockCurrentCategory} 
+      currentCategory={mockCurrentCategory}
+      setContactSelected={mockSetContactSelected}
+      contactSelected={mockContactSelected} 
     />);
 
     // Assert
@@ -54,6 +62,8 @@ describe('links are visible', () => {
       categories={categories}
       setCurrentCategory={mockSetCurrentCategory}
       currentCategory={mockCurrentCategory} 
+      setContactSelected={mockSetContactSelected}
+      contactSelected={mockContactSelected}
     />);
 
     // Assert
