@@ -54,8 +54,6 @@
 
 Deployed at URL: https://glenluersman.github.io/photo-port/
 
-<img style="margin: 0 0 15px 0" src="public/images/.PNG" ></a>
+<img style="margin: 0 0 15px 0" src="public/images/photo-port1.PNG" ></a>
 
-<img style="margin: 0 0 15px 0" src="public/images/.PNG" ></a>
-
-<img style="margin: 0 0 15px 0" src="public/images/.PNG" ></a>
+<img style="margin: 0 0 15px 0" src="public/images/photo-port2.PNG" ></a>
